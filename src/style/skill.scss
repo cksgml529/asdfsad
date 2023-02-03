@@ -1,0 +1,13 @@
+@import "../assets/style/variable";
+
+.skill {
+  h3 {
+    font-family: $one;
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 200px;
+    letter-spacing: 80px;
+    margin-bottom: 100px;
+  }
+}

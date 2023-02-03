@@ -1,0 +1,94 @@
+@import "../assets/style/variable";
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+@keyframes circleD {
+  0% {
+  }
+  100% {
+    bottom: -15%;
+  }
+}
+.mainHello {
+  border: 10px solid #5b63ec;
+  height: calc(100vh - 20px);
+  display: grid;
+  place-content: center center;
+  position: relative;
+  overflow: hidden;
+  .helloBox {
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    h2 {
+      font-family: $lily;
+      font-size: 130px;
+      color: transparent;
+      -webkit-text-stroke: 5px #000;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 55px;
+      letter-spacing: 2px;
+      .line {
+        border-bottom: 3px solid #5b63ec;
+        .rolling {
+          display: inline-block;
+          position: relative;
+          width: 500px;
+          padding: 0 10px 1px 10px;
+          color: #000;
+          font-weight: 600;
+          transition: 0.5s;
+          transform: translateY(20px);
+          opacity: 0;
+          &.on {
+            animation: text 2.5s ease-in-out;
+          }
+        }
+      }
+    }
+    .point {
+      color: #5b63ec;
+      padding: 0 10px;
+    }
+  }
+  .circle {
+    width: 230px;
+    position: absolute;
+    left: 45%;
+    bottom: -30%;
+    animation: circleD 1s forwards ease;
+
+    transition: 0.4s;
+    img {
+      width: 100%;
+      animation: 10s rotate infinite linear;
+    }
+  }
+}

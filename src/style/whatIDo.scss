@@ -1,0 +1,110 @@
+@keyframes underline {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.whatido {
+  padding: 250px 0 350px 0;
+  overflow: hidden;
+  font-size: 40px;
+  span {
+    font-weight: 600;
+    padding-left: 10px;
+  }
+  .introBox {
+    display: flex;
+    white-space: nowrap;
+    transition: 0.4s;
+    h3 {
+      font-size: 140px;
+      color: transparent;
+      padding-bottom: 200px;
+      -webkit-text-stroke: 1px #5b63ec;
+
+      span {
+        color: #5b63ec;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .textBox {
+    text-align: center;
+    p {
+      margin-bottom: 20px;
+      .strong {
+        cursor: pointer;
+        position: relative;
+        &:hover::after {
+          content: "";
+          width: 0;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .strong::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.4s;
+      }
+
+      &:nth-child(1) .imgBox {
+        background-color: #ffc558;
+        border: 3px solid #fab430;
+      }
+      &:nth-child(2) .imgBox {
+        background-color: #969cf3;
+        border: 3px solid #7c81d6;
+      }
+      .imgBox {
+        display: inline-flex;
+        width: 46px;
+        height: 56px;
+        border-radius: 50%;
+        margin: 0 10px;
+        vertical-align: middle;
+
+        img {
+          width: 80%;
+          object-fit: contain;
+        }
+      }
+    }
+    .line {
+      font-weight: 700;
+      margin-top: 40px;
+      display: inline;
+      cursor: pointer;
+      position: relative;
+
+      &:hover::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.4s;
+      }
+    }
+  }
+}

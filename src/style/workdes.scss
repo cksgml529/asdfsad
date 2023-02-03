@@ -1,0 +1,49 @@
+.workDes {
+  width: 45%;
+  text-transform: capitalize;
+  padding: 150px 0 0 200px;
+
+  .workBox {
+    position: sticky;
+    top: 35%;
+    h4 {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+    a {
+      width: 25%;
+      padding: 10px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #969cf3;
+      border-radius: 50px;
+      color: #5b63ec;
+      font-weight: 700;
+      font-size: 20px;
+      .iconBox {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        span {
+          padding-right: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

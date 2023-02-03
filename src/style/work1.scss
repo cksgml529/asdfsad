@@ -1,0 +1,98 @@
+.work1 {
+  display: flex;
+
+  .workdes1 {
+    width: 50vw;
+    width: 45%;
+    text-transform: capitalize;
+    padding: 150px 0 0 200px;
+    .desBox {
+      position: sticky;
+      top: 35%;
+      h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      h3 {
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      a {
+        width: 25%;
+        padding: 10px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #969cf3;
+        border-radius: 50px;
+        color: #5b63ec;
+        font-weight: 700;
+        font-size: 20px;
+        .iconBox {
+          width: 30px;
+          height: 30px;
+          position: relative;
+          span {
+            padding-right: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+  .workWrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    .workBox1 {
+      height: 65vh;
+      position: relative;
+      margin: 150px 0;
+      overflow: hidden;
+      box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover .bgimgBox {
+        transform: scale(1.1);
+      }
+      &:hover .logoBox {
+        opacity: 1;
+      }
+
+      a {
+        .bgimgBox {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.4s;
+        }
+      }
+      .logoBox {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+        opacity: 0;
+      }
+    }
+  }
+}

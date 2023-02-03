@@ -1,0 +1,55 @@
+.last {
+  height: 100vh;
+  background-color: #5b63ec;
+  position: relative;
+  overflow: hidden;
+
+  .textBox {
+    text-transform: capitalize;
+    font-size: 130px;
+    font-weight: 600;
+    position: absolute;
+    top: 15%;
+
+    .WBox {
+      display: flex;
+      white-space: nowrap;
+      transition: 0.4s;
+      p {
+        color: #fff;
+        line-height: 1.5;
+      }
+    }
+    .SBox {
+      display: flex;
+      white-space: nowrap;
+      transition: 0.4s;
+      position: relative;
+      padding-top: 3vw;
+      z-index: 9999;
+      .stroke {
+        -webkit-text-stroke: 3px #fff;
+        color: transparent;
+        // transform: translateX(-300px);
+      }
+    }
+  }
+  .imgBox {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    width: 800px;
+    .laptop {
+      position: relative;
+      width: 100%;
+      z-index: 0;
+    }
+    .frame {
+      width: 16%;
+      position: absolute;
+      z-index: 9999;
+      top: 22.6%;
+      left: 13.5%;
+    }
+  }
+}
