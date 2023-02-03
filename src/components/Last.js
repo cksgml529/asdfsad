@@ -35,8 +35,8 @@ function Last() {
   };
 
   useEffect(() => {
-    reTxt();
     const rolling = setInterval(() => {
+      reTxt();
       setPosL(posL - 13);
       WBoxRef.current.style.transform = `translateX(${posL}px)`;
       setPosR(posR + 13);
@@ -44,6 +44,7 @@ function Last() {
     }, 100);
     return () => clearInterval(rolling);
   }, [posL]);
+
   return (
     <div className="last">
       <div className="textBox">

@@ -2,24 +2,27 @@
 .skillList {
   .skillBox {
     height: 270px;
-    padding: 0 24vw;
+    padding: 0 20vw;
     border-top: 1px solid #000;
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
     align-items: center;
     &:hover h4 {
       color: #fab430;
       opacity: 0.7;
     }
     h4 {
-      width: 300px;
+      display: block;
+      width: 15vw;
       font-family: $one;
-      font-size: 50px;
+      font-size: 3.125rem;
       text-align: center;
       line-height: 270px;
-      margin-right: 250px;
+      margin-right: 150px;
       transition: 0.4s;
     }
     ul {
+      width: 100%;
       list-style-type: disc;
       list-style-position: inside;
 

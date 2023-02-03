@@ -68,6 +68,7 @@ function Work1() {
   const [tag, setTag] = useState(projectData[num].tag);
   const [link, setLink] = useState(projectData[num].link);
 
+  const Con = useRef();
   const topRef = useRef([]);
   const desRef = useRef([]);
   let count = 0;
@@ -76,7 +77,7 @@ function Work1() {
     for (let i = 0; i < topRef.current.length; i++) {
       const refvalue = topRef.current[i].offsetTop;
 
-      if (desRef.current.offsetTop >= refvalue - 250) {
+      if (desRef.current.offsetTop >= refvalue) {
         setNum(i);
       }
       setTitle(projectData[num].title);
@@ -86,13 +87,11 @@ function Work1() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      eventHandler();
-      window.removeEventListener("scroll", eventHandler);
-    });
+    Con.current.addEventListener("scroll", eventHandler);
+    return () => Con.current.removeEventListener("scroll", eventHandler);
   }, [num]);
   return (
-    <div className="work1">
+    <div className="work1" ref={Con}>
       <div className="workdes1">
         <div className="desBox" ref={desRef}>
           <h4>work</h4>

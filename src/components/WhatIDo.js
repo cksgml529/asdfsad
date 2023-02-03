@@ -6,7 +6,6 @@ import flow from "../assets/images/icon/whatido_flow.png";
 import "../style/whatIDo.scss";
 
 function WhatIDo() {
-  const intro = ["Hello, my name is ", "chan hee "];
   const int1 = ["Hello, my name is"];
   const int2 = ["chan hee"];
   const [intro1, setIntro1] = useState(int1);
@@ -15,7 +14,6 @@ function WhatIDo() {
   const [txtCon, setTxtCon] = useState([]);
   const rollingRef = useRef();
   const reTxtRef = useRef();
-  let count = 0;
   let txt = [];
 
   const reTxt = () => {
@@ -31,13 +29,21 @@ function WhatIDo() {
   };
 
   useEffect(() => {
-    reTxt();
     const rolling = setInterval(() => {
+      reTxt();
       setPos(pos - 10);
       rollingRef.current.style.transform = `translateX(${pos}px)`;
     }, 100);
     return () => clearInterval(rolling);
   }, [pos]);
+  // useEffect(() => {
+  //   const rolling = setInterval(() => {
+  //     reTxt();
+  //     setPos(pos - 10);
+  //     rollingRef.current.style.transform = `translateX(${pos}px)`;
+  //   }, 100);
+  //   return () => clearInterval(rolling);
+  // }, [pos]);
   return (
     <div className="whatido">
       <div className="introBox" ref={rollingRef}>
