@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/asdfsad/static/css/main.0a567384.css",
-    "main.js": "/asdfsad/static/js/main.a4af3483.js",
+    "main.css": "/asdfsad/static/css/main.d6b7a9c8.css",
+    "main.js": "/asdfsad/static/js/main.646e5868.js",
     "static/media/PretendardVariable.woff2": "/asdfsad/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
     "static/media/pj1_img.jpg": "/asdfsad/static/media/pj1_img.08f37aa245e1db6e83dd.jpg",
     "static/media/tpj1_img.png": "/asdfsad/static/media/tpj1_img.f19b12686732a6850626.png",
@@ -11,11 +11,11 @@
     "static/media/whatido_lisence.png": "/asdfsad/static/media/whatido_lisence.2d57d98c5eb49246c48b.png",
     "static/media/tpj2_logo.svg": "/asdfsad/static/media/tpj2_logo.d5127c77f85823c15c67fdda4eade78a.svg",
     "index.html": "/asdfsad/index.html",
-    "main.0a567384.css.map": "/asdfsad/static/css/main.0a567384.css.map",
-    "main.a4af3483.js.map": "/asdfsad/static/js/main.a4af3483.js.map"
+    "main.d6b7a9c8.css.map": "/asdfsad/static/css/main.d6b7a9c8.css.map",
+    "main.646e5868.js.map": "/asdfsad/static/js/main.646e5868.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a567384.css",
-    "static/js/main.a4af3483.js"
+    "static/css/main.d6b7a9c8.css",
+    "static/js/main.646e5868.js"
   ]
 }
